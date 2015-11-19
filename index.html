@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jessica Ro's Portfolio</title>
+      
+  <!-- Libraries -->
+  <script src="https://code.jquery.com/jquery.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+
+  <script src="main.js"></script>
+
+  
+</head>
+<body ng-app="myApp">
+  <div ng-controller="myCtrl">
+    <!-- Create links to different sections -->
+          <h1>This is the header -- it'll stick around</h1>        
+          <a ui-sref="work" class="btn btn-default">Work</a>
+          <a ui-sref="about" class="btn btn-default">About</a>
+          <a ui-sref="contact" class="btn btn-default">Contact</a>
+      </header>
+        
+
+      <div class="container">
+        <!-- This is where your content will display -->
+        <div ui-view></div>
+      </div>
+
+      <footer>
+          <h2>(This is the footer -- it'll stick around too)</h2>
+      </footer>
+    
+  </div>
+</body>
+</html>

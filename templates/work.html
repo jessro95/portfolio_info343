@@ -1,6 +1,15 @@
-<div ng-repeat="data in datas">
-
-	<a ui-sref="moreInfo(data)" class="btn btn-default"><img src = {{data.image}} />
-	</a>
-
-</div>
+<form class="container">
+	<div class="row">
+		<div ng-repeat="data in datas">
+			<div class="col-xs-3">
+				<a ng-click="getInfo(data)" class="btn btn-default"><img src ={{data.image}} />
+				</a>
+			</div>
+			
+		</div>
+	</div>
+	<!-- Information about the clicked project -->
+			<div class="info">
+				
+			</div>
+</form>

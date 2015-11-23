@@ -13,16 +13,20 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
 
   <script src="main.js"></script>
+  <link href="css/app.css" type="text/css" rel="stylesheet"/> 
 
   
 </head>
 <body ng-app="myApp">
   <div ng-controller="myCtrl">
     <!-- Create links to different sections -->
-          <h1>This is the header -- it'll stick around</h1>        
-          <a ui-sref="work" class="btn btn-default">Work</a>
-          <a ui-sref="about" class="btn btn-default">About</a>
-          <a ui-sref="contact" class="btn btn-default">Contact</a>
+          <h1>Jessica Ro</h1>   
+          <nav class="nav:default"> 
+       
+            <a ui-sref="work" >Work</a>
+            <a ui-sref="about" >About</a>
+            <a ui-sref="contact" >Contact</a>
+          </nav>
       </header>
         
 
@@ -32,7 +36,7 @@
       </div>
 
       <footer>
-          <h2>(This is the footer -- it'll stick around too)</h2>
+          <h2></h2>
       </footer>
     
   </div>
